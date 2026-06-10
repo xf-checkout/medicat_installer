@@ -16,7 +16,7 @@ depCommands["wget"]="wget"
 depCommands["7z"]="zip"
 depCommands["mkfs.vfat"]="mkfs"
 depCommands["mkntfs"]="ntfs"
-depCommands["mkfs.exfat"]="exfat-utils"
+depCommands["mkfs.exfat"]="exfat"
 depCommands["parted"]="parted"
 declare -A wget
 wget["nixos"]="nixos.wget"
@@ -41,11 +41,13 @@ declare -A aria
 aria["nixos"]="nixos.aria"
 aria["default"]="aria2"
 declare -A ventoy
-mkfs.exfat["fedora"]="exfatprogfs"
-mkfs.exfat["default"]="exfat-utils"
-parted["default"]="parted"
 ventoy["nixos"]="nixos.ventoy-full"
 ventoy["default"]="ventoy"
+declare -A parted
+parted["default"]="parted"
+declare -A exfat
+exfat["fedora"]="exfatprogfs"
+exfat["default"]="exfat-utils"
 
 # Other Variables
 sudo="sudo" # By default use sudo with package manager
