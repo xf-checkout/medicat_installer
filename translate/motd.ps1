@@ -10,7 +10,7 @@ $text1 = "Happy April Fools Day"
 Start-Process "https://url.medicatusb.com/af26"
 } else {
 # Normal Text (Updated every once in a while.)
-$text1 = "Happy Holidays on behalf of the Medicat USB team!, Please Join the discord and answer a few questions regarding the future update."
+$text1 = "If you or a loved one has been diagnosed with a broken computer, you may be asked to help now..."
 } # Close Loop
 
 ### Saved messages
